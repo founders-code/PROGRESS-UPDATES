@@ -17,6 +17,29 @@ function vName(id){ const v=DATA.verticals.find(x=>x.id===id); return v?v.short:
 function fmtDate(s){ const [y,m,d]=s.split("-"); const mo=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+m-1]; return mo+" "+(+d); }
 function href(view){ return view==="home" ? "index.html" : view+".html"; }
 
+/* ---------- Capital In, Value Out ---------- */
+function renderCapitalValue(){
+  const c=DATA.capitalValue; if(!c) return "";
+  const stats=c.stats.map(s=>`<div class="cv-stat"><div class="k">${s.k}</div><div class="l">${s.l}</div></div>`).join("");
+  const groups=c.groups.map(g=>`
+    <tr class="grp"><td colspan="3">${g.title}</td></tr>
+    ${g.rows.map(r=>`<tr><td><div class="it">${r.item}</div>${r.detail?`<div class="dt">${r.detail}</div>`:""}</td><td class="num">${r.cons}</td><td class="num">${r.head}</td></tr>`).join("")}
+    <tr class="sub"><td>${g.subtotal.label}</td><td class="num">${g.subtotal.cons}</td><td class="num">${g.subtotal.head}</td></tr>`).join("");
+  return `<div class="cv">
+    <div class="cv-head"><h2>Capital In, Value Out</h2><span class="sub">What the founding investment has actually bought · ${c.asOf}</span></div>
+    <p class="cv-lead">${c.lead}</p>
+    <div class="cv-stats">${stats}</div>
+    <table class="cv-table">
+      <thead><tr><th>What was delivered</th><th class="num">Conservative</th><th class="num">Headline</th></tr></thead>
+      <tbody>${groups}
+        <tr class="tot"><td>${c.total.label}</td><td class="num">${c.total.cons}</td><td class="num">${c.total.head}</td></tr>
+      </tbody>
+    </table>
+    <div class="cv-ai">${c.aiNote}</div>
+    <div class="cv-foot">${c.foot}</div>
+  </div>`;
+}
+
 /* ---------- top menu ---------- */
 function renderTabs(active){
   const el=document.getElementById("tabs");
@@ -80,7 +103,8 @@ function renderHome(){
       <span><i class="dot c-todo"></i> Upcoming</span>
       <span style="margin-left:auto">Click any pipeline for the full detail page →</span>
     </div>
-    <div class="board">${cols}</div>`;
+    <div class="board">${cols}</div>
+    ${renderCapitalValue()}`;
   requestAnimationFrame(()=>{document.querySelectorAll(".pbar i").forEach(b=>{ if(b.dataset.w) b.style.width=b.dataset.w+"%"; });});
 }
 

@@ -3,6 +3,36 @@ const DATA = {
   overallPct: 34,
   overallNote: "Roughly a third of the way to an operating, regulated exchange — and moving every week. Capital-efficient by design: a $44K founding cheque has already produced an estimated $111K–$264K of finished, secured value (2.6–6.3× per $1). Well ahead of a typical pre-seed on product proof, web presence, advisory bench, and institutional pipeline; on-par-to-early on closing capital and on regulatory filings. The list below is the receipts: what's done, what's underway now, and what's next, in every workstream.",
 
+  /* ███ CAPITAL IN, VALUE OUT ███ — shown under the pipelines on the overview page. */
+  capitalValue: {
+    asOf: "May 2026",
+    lead: "A founding investor committed $50,000; $44,000 is in to date. Against roughly $42,000 deployed, we have produced and secured an estimated $111,000 — and as much as $264,000 — in finished assets and professional value. The work we built ourselves with AI alone replaced ~$55,000 to ~$169,000 of agency cost — for $5,923 of software spend.",
+    stats: [
+      { k:"$44K",      l:"Founding capital received to date (of $50K committed)" },
+      { k:"~$42K",     l:"Capital deployed" },
+      { k:"$111–264K", l:"Value delivered & secured" },
+      { k:"2.6–6.3×",  l:"Value per $1 deployed" }
+    ],
+    groups: [
+      { title:"Built in-house with AI — cost avoided", rows:[
+        { item:"Websites — 3 sites", detail:"~80–100 pages across kcs-capital.com, 4ormfinance.com & 4ormex.com; 250+ design iterations.", cons:"$30,000", head:"$96,000" },
+        { item:"Pitch deck", detail:"Finalized investor pitch deck, designed and built in-house.", cons:"$3,000", head:"$8,000" },
+        { item:"Financial model, pro forma & cap table", detail:"Finalized cap table and financial models.", cons:"$5,000", head:"$15,000" },
+        { item:"Market & regulatory research", detail:"16-page Runway Briefing, case studies, RWA market & Canadian regulatory research.", cons:"$8,000", head:"$25,000" },
+        { item:"Sourcing data & pipeline", detail:"442 verified records — 191 institutional CEO direct contacts, 81 VC contacts, 170 grants.", cons:"$9,000", head:"$25,000" }
+      ], subtotal:{ label:"Subtotal — built with AI", cons:"$55,000", head:"$169,000" } },
+      { title:"Professional services secured — pro bono / in-kind", rows:[
+        { item:"Capital-markets advisory", detail:"Bruce — embedded advisor (~4 months); sourced both law firms. $8,000/mo.", cons:"$32,000", head:"$50,000" },
+        { item:"Technical architecture", detail:"Zed Zendila — 80+ hrs; 3 architecture overviews + 30/60/90-day roadmap.", cons:"$16,000", head:"$28,000" },
+        { item:"Securities counsel", detail:"Osler + Fasken — 4+ hrs senior counsel, $0 billed; equity offer outstanding.", cons:"$2,800", head:"$4,800" },
+        { item:"CFA audit", detail:"Miika — audited pro forma, models & case studies; eligible CCO.", cons:"$5,000", head:"$12,000" }
+      ], subtotal:{ label:"Subtotal — pro bono / in-kind", cons:"$55,800", head:"$94,800" } }
+    ],
+    total: { label:"Total value delivered & secured", cons:"$110,800", head:"$263,800" },
+    aiNote: "<b>The AI did the expensive part.</b> $5,923 of software &amp; AI tooling produced the in-house work valued at $55,000–$169,000 — a return of roughly 9× to 29× on that spend. The cheap part was the capital.",
+    foot: "The one-line version for the board: we took $44K and turned it into a finished, credible company — websites, a deck, an audited model, an embedded advisor, an architect, two top-tier law firms and two banks at the table — conservatively worth about 2.6× the cheque, and plausibly more than 6×. Value estimates are illustrative judgment calls based on quotes received and standard market rates (website ~$1,200/page; Bruce $8,000/mo; Zed fractional-CTO rates $200–$350/hr; sourcing data at ZoomInfo-class rates) — not invoiced amounts. Source: KCS finance tracker, May 2026."
+  },
+
   /* ███ WEEKLY WINS ███  — add one line each week. Newest first.
      date "YYYY-MM-DD". vertical = a vertical id (for the colored tag). */
   wins: [
