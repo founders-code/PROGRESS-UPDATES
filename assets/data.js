@@ -6,7 +6,7 @@ const DATA = {
   /* ███ CAPITAL IN, VALUE OUT ███ — shown under the pipelines on the overview page. */
   capitalValue: {
     asOf: "May 2026",
-    lead: "A founding investor committed $50,000; $44,000 is in to date. Against roughly $42,000 deployed, we have produced and secured an estimated $111,000 — and as much as $264,000 — in finished assets and professional value. The work we built ourselves with AI alone replaced ~$55,000 to ~$169,000 of agency cost — for $5,923 of software spend.",
+    lead: "A founding investor committed $50,000; $44,000 is in to date. Against roughly $42,000 deployed, we have produced and secured an estimated $111,000 — and as much as $264,000 — in finished assets and professional value.",
     stats: [
       { k:"$44K",      l:"Founding capital received to date (of $50K committed)" },
       { k:"~$42K",     l:"Capital deployed" },
@@ -29,7 +29,6 @@ const DATA = {
       ], subtotal:{ label:"Subtotal — pro bono / in-kind", cons:"$55,800", head:"$94,800" } }
     ],
     total: { label:"Total value delivered & secured", cons:"$110,800", head:"$263,800" },
-    aiNote: "<b>The AI did the expensive part.</b> $5,923 of software &amp; AI tooling produced the in-house work valued at $55,000–$169,000 — a return of roughly 9× to 29× on that spend. The cheap part was the capital.",
     foot: "The one-line version for the board: we took $44K and turned it into a finished, credible company — websites, a deck, an audited model, an embedded advisor, an architect, two top-tier law firms and two banks at the table — conservatively worth about 2.6× the cheque, and plausibly more than 6×. Value estimates are illustrative judgment calls based on quotes received and standard market rates (website ~$1,200/page; Bruce $8,000/mo; Zed fractional-CTO rates $200–$350/hr; sourcing data at ZoomInfo-class rates) — not invoiced amounts. Source: KCS finance tracker, May 2026."
   },
 
@@ -99,7 +98,7 @@ const DATA = {
       facts:[
         "Lead architect: <b>Zed</b> (80+ hrs, building for equity)",
         "Atomic settlement: <b>~3.3–9s</b> vs legacy 1.3–3 days",
-        "Web build value: <b>$30K–96K</b> for ~$5,923 of tooling",
+        "Web build value: <b>$30K–96K</b> built in-house with AI",
         "Build quote: <b>Spear Tech ~$211–317K</b>",
         "LayerZero = Phase-3 adapter, <b>not</b> core",
         "Full product to market: <b>18–24 months</b>"
@@ -312,7 +311,6 @@ const DATA = {
         "Firms: <b>Capiche</b> + <b>CFA</b> + <b>Fasken</b>",
         "Legal cost saved: ~<b>$85K</b> vs Osler",
         "Capital in → value out: <b>$44K → $111–264K</b>",
-        "AI leverage: <b>9–29×</b> on $5,923 tooling",
         "Shares: <b>3 classes</b>; ICO strategy in development"
       ]
     },

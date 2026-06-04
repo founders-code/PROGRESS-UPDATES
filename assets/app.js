@@ -35,7 +35,6 @@ function renderCapitalValue(){
         <tr class="tot"><td>${c.total.label}</td><td class="num">${c.total.cons}</td><td class="num">${c.total.head}</td></tr>
       </tbody>
     </table>
-    <div class="cv-ai">${c.aiNote}</div>
     <div class="cv-foot">${c.foot}</div>
   </div>`;
 }
