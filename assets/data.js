@@ -36,9 +36,9 @@ const DATA = {
   /* ███ WEEKLY WINS ███  — add one line each week. Newest first.
      date "YYYY-MM-DD". vertical = a vertical id (for the colored tag). */
   wins: [
-    { date:"2026-06-03", vertical:"capital",   text:"Pre-seed target increased to $3–4M." },
-    { date:"2026-06-03", vertical:"product",   text:"Architect (Zed) onboarded into ClickUp + Drive; architecture review advanced toward the execution-ready pack. Insurance identified as the 4th platform component." },
-    { date:"2026-06-02", vertical:"team",      text:"Sent Martin Hack (Silicon Valley CTO / AI) the proposal, NDA and architecture docs — CTO conversation advancing." },
+    { date:"2026-06-03", vertical:"capital",   text:"Pre-seed target increased to $4M." },
+    { date:"2026-06-03", vertical:"product",   text:"Architect (Zed) onboarded into ClickUp + Drive; architecture review advanced toward the execution-ready pack." },
+    { date:"2026-06-02", vertical:"team",      text:"First discovery meeting with Martin Hack — Silicon Valley CTO and AI expert — who mentioned he already has a team ready to assemble." },
     { date:"2026-06-02", vertical:"legal",     text:"Initial Coin Offering (ICO) strategy development in place." },
     { date:"2026-06-02", vertical:"investors", text:"Neo Financial cultivation in progress; Digital Commodities meeting being set up." },
     { date:"2026-06-02", vertical:"capital",   text:"Cap table finalized with the CFO — $10M valuation, 20M shares @ $0.50, ~10% dilution; two raise scenarios modeled." },
@@ -49,14 +49,14 @@ const DATA = {
     { date:"2026-05-31", vertical:"marketing", text:"16-page Runway Briefing produced for founding investors." },
     { date:"2026-05-30", vertical:"capital",   text:"Raise revised upward — valuation reset to $10M, target increased." },
     { date:"2026-05-29", vertical:"product",   text:"Institutional architecture validated — 7.5/10 architecture fit, 8.5/10 strategic fit (Zed review)." },
-    { date:"2026-05-27", vertical:"marketing", text:"SEO program kicked off with Ming — dual-track plan for KCS Capital (C-suite) + 4ormEx (volume)." },
+    { date:"2026-05-27", vertical:"marketing", text:"SEO program kicked off with Ming for 4orm Finance and the Canadian go-to-market strategy." },
     { date:"2026-05-25", vertical:"product",   text:"Major upgrade to the institutional demo — compliance workflow, transaction simulator, savings breakdown." },
     { date:"2026-05-19", vertical:"bd",        text:"ATB Financial relationship opened — primary contacts established; 4orm flagged internally as a client of interest." },
     { date:"2026-05-08", vertical:"legal",     text:"Three-firm legal structure locked — Capiche (corporate), CFA (TFSA/RRSP trust), Fasken (securities)." },
-    { date:"2026-05-07", vertical:"capital",   text:"Don's $50K finalized into 200,000 shares (1%); Brooks' $250K structured as a bridge convertible to deploy capital fast." },
+    { date:"2026-05-07", vertical:"capital",   text:"Angel investor's $50K finalized into 200,000 shares (1%); our first pre-seed investor's $250K will be the first tranche of the $4M pre-seed raise." },
     { date:"2026-05-04", vertical:"legal",     text:"Selected Capiche over Osler for corporate setup — ~$85K (≈70%) legal-cost reduction while keeping TFSA/RRSP eligibility." },
     { date:"2026-05-04", vertical:"investors", text:"Neo Financial founders (Skip the Dishes exit) added to the pre-seed pipeline via a warm intro." },
-    { date:"2026-04-27", vertical:"team",      text:"Advisory council assembled — Bruce Fair (30-yr VC), Mike Andrews (ex-SWIFT/Morgan Stanley), Michael Stevens (Fasken), Zed (architect), Don (first investor)." },
+    { date:"2026-04-27", vertical:"team",      text:"Advisory council assembled — Bruce Fair (30-yr VC), Mike Andrews (ex-SWIFT/Morgan Stanley), Michael Stevens (Fasken), Zed (architect)." },
     { date:"2026-04-27", vertical:"grants",    text:"170+ grant programs identified (16 Canada-specific) — sourced directly rather than paying a facilitation fee." },
     { date:"2026-04-27", vertical:"bd",        text:"Institutional database built — 191 contacts across ~100 institutions; BD pipeline stages defined." },
     { date:"2026-04-27", vertical:"investors", text:"VC pipeline compiled — 81 Canadian + international VC contacts with check sizes and decision-makers." },
@@ -139,28 +139,28 @@ const DATA = {
     /* 3 ---------------------------------------------------------- */
     {
       id:"capital", name:"Capital & Pre-Seed Raise", short:"Pre-Seed",
-      pct:45, stage:"Round structuring · $3–4M target · closing 30–60 days",
+      pct:45, stage:"Round structuring · $4M target · closing 30–60 days",
       benchmark:{level:"onpar", note:"<b>On-par for an opening pre-seed — but unusually capital-efficient.</b> Terms, valuation, cap table and a CFA-audited model are set, with real soft commitments in hand. The founding $44K has already produced $111K–$264K of secured value (2.6–6.3× per $1). The round is not yet formally open or closed, and the target was just increased to $4M — a stronger plan, not a closed round."},
       checkpoints:[
         {state:"done", t:"Investor-ready model + pro forma (CFA-audited)", d:"Built with Miika (CFA) and backed as valid & correct; dilution scenarios for multiple raise sizes."},
         {state:"done", t:"Cap table finalized", d:"$10M valuation, 20M shares @ $0.50, ~10% dilution; warrant strategy to absorb raise uncertainty."},
         {state:"done", t:"Three-class share structure defined", d:"Class A common voting, Class B founder super-voting (sunset), and investor voting-preferred with revenue-based redemption (10–15% of revenue)."},
         {state:"done", t:"$50K bootstrap / angel investment secured", d:"Founding cheque of $50K committed ($44K received to date); ~$42K deployed across legal, build, advisory and ops."},
-        {state:"done", t:"Bridge commitment secured", d:"Brooks $250K (up to $500K), structured as a bridge convertible to deploy capital before close."},
+        {state:"done", t:"First pre-seed tranche secured", d:"Our first pre-seed investor's $250K — the first tranche of the $4M raise."},
         {state:"done", t:"Third-party submission & reporting secured", d:"External submission and reporting in place for the raise."},
         {state:"done", t:"Capiche Capital retained", d:"$10K retainer; financing platform + subscription docs."},
         {state:"done", t:"Pitch deck built", d:"Finalized institutional pitch deck."},
-        {state:"active", t:"Raise increased to $3–4M", d:"Valuation $10M; target lifted to $3–4M as the build scope firmed up."},
+        {state:"active", t:"Raise increased to $4M", d:"Valuation $10M; target lifted to $4M as the build scope firmed up."},
         {state:"active", t:"EBC application (BC CCPC)", d:"30% BC tax credit + TFSA/RRSP eligibility; ~6–15 working days to full investor eligibility."},
         {state:"active", t:"Subscription documents", d:"Drafting via Capiche."},
-        {state:"todo", t:"Formally open the $3–4M pre-seed round", d:"Open once docs + EBC land."},
+        {state:"todo", t:"Formally open the $4M pre-seed round", d:"Open once docs + EBC land."},
         {state:"todo", t:"Final pitch deck v2.0 + investor ROI section", d:"Refreshed with the revised valuation."},
         {state:"todo", t:"Close pre-seed", d:"Target 30–60 days."}
       ],
       facts:[
-        "Target: <b>$3–4M</b> (increased)",
+        "Target: <b>$4M</b> (increased)",
         "Valuation: <b>$10M</b>",
-        "Committed: <b>$50K</b> founding ($44K in) + <b>Brooks $250K</b>",
+        "Committed: <b>$50K</b> angel ($44K in) + <b>$250K</b> 1st pre-seed",
         "Capital efficiency: <b>2.6–6.3×</b> per $1 ($111–264K value)",
         "Vehicle: <b>BC CCPC</b> + EBC 30% credit",
         "Close target: <b>30–60 days</b>"
@@ -296,7 +296,7 @@ const DATA = {
         {state:"done", t:"~$85K legal cost reduction", d:"Capiche ($30–35K) selected over Osler ($115K) while preserving TFSA/RRSP eligibility."},
         {state:"done", t:"Cap table finalized", d:"Founder, advisor and investor allocations modeled and locked into the structure."},
         {state:"done", t:"Share classes defined", d:"Common (1:1) + founder super-voting (sunset) + investor voting-preferred; founder shares at $0.001."},
-        {state:"done", t:"Bridge convertible structured", d:"Brooks' $250K taken as bridge convertible debt (~$5K legal) to deploy ahead of subscription docs."},
+        {state:"done", t:"First-tranche convertible structured", d:"Our first pre-seed investor's $250K (~$5K legal) to deploy ahead of subscription docs."},
         {state:"done", t:"\"Capital In, Value Out\" summary produced", d:"Board summary documenting $44K in → $111K–$264K value out; AI build replaced ~$55K–169K of agency cost for $5,923 of tooling (9–29×)."},
         {state:"active", t:"Initial Coin Offering (ICO) strategy", d:"ICO strategy development in place — not yet completed."},
         {state:"active", t:"Shareholder agreement", d:"Super-voting clauses (with sunset); drag-along + buyback; in review."},
@@ -324,12 +324,12 @@ const DATA = {
       checkpoints:[
         {state:"done", t:"VC pipeline compiled", d:"81 VC contacts loaded in ClickUp with check sizes ($500K–$50M) and decision-makers."},
         {state:"done", t:"Accredited-investor network identified", d:"Reach to up to 12,000 international accredited investors mapped."},
-        {state:"done", t:"First capital committed", d:"Don $50K (→1% / 200,000 shares); Brooks $250K (up to $500K) via TFSA, structured as a bridge."},
+        {state:"done", t:"First capital committed", d:"$50K angel investment (→1% / 200,000 shares); first pre-seed investor $250K — the first tranche of the $4M raise."},
         {state:"done", t:"100+ institutional CEO direct emails", d:"Personal (not info@) lines to the people who actually decide."},
         {state:"done", t:"Data room built", d:"Custom data room (migrating onto the KCS site)."},
         {state:"active", t:"Neo Financial — cultivation", d:"Founders (Skip the Dishes exit) being cultivated via a warm intro."},
         {state:"active", t:"Digital Commodities — meeting setup", d:"Strategic conversation being scheduled."},
-        {state:"active", t:"$250K first tranche of the $3–4M — in process", d:"First tranche (Brooks $250K) landing over the TFSA-transfer window."},
+        {state:"active", t:"$250K first tranche of the $4M — in process", d:"First tranche from our first pre-seed investor, landing over the registered-account transfer window."},
         {state:"active", t:"Warm intros to Tier-1 VCs + bank", d:"Mapping intro paths; strategic interest from Spear and LayerZero (open to the seed)."},
         {state:"todo", t:"Pre-seed investor ROI model", d:"Projected-ROI section for the deck."},
         {state:"todo", t:"Seed round planning", d:"\"Seed-strapping\" $15–25M (2027), likely via a US entity."}
@@ -337,7 +337,7 @@ const DATA = {
       facts:[
         "VC contacts: <b>81</b> ($500K–$50M)",
         "Accredited network: <b>up to 12,000</b> intl.",
-        "Committed: <b>Don $50K</b> + <b>Brooks $250K</b>",
+        "Committed: <b>$50K angel</b> + <b>$250K</b> 1st pre-seed",
         "Cultivating: <b>Neo Financial</b>, <b>Digital Commodities</b>",
         "Strategic: <b>Spear</b>, <b>LayerZero</b>",
         "Seed plan: <b>$15–25M</b> (2027)"
